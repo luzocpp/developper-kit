@@ -1,0 +1,4 @@
+colorama
+PyYAML
+pyjwt
+dnspython
