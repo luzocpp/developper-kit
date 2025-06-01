@@ -1,4 +1,4 @@
-# wily devkit
+# luzo devkit
 
 Un outil en ligne de commande (CLI) qui regroupe plusieurs petits outils pratiques pour les développeurs, étudiants, makers, ou toute personne qui veut gagner du temps avec des manipulations courantes (hash, encodage, formatage, réseau, etc.).
 
@@ -34,13 +34,13 @@ Chaque outil est une "commande". Tu lances le programme avec la commande de ton 
 
 - **Calculer le hash d'un texte** (pour vérifier un mot de passe, etc.)
   ```
-  python toolbox.py hash --algo sha256 --text "BonjourWily"
+  python toolbox.py hash --algo sha256 --text "BonjourLuzo"
   ```
-  → Affiche le hash SHA256 du mot "BonjourWily".
+  → Affiche le hash SHA256 du mot "BonjourLuzo".
 
 - **Encoder un texte en base64** (pour cacher un mot de passe, transmettre des données, etc.)
   ```
-  python toolbox.py encode base64 --text "Wilycppboy123"
+  python toolbox.py encode base64 --text "Luzocppboy123"
   ```
 
 - **Décoder du base64**
@@ -93,4 +93,4 @@ pip install -r requirements.txt
 
 ---
 
-**Auteur :** wilycppboy
+**Auteur :** luzocpp
