@@ -1,26 +1,24 @@
-# 🔧 Zotokaf DevKit
+# ENGLISH
 
-A command-line tool (CLI) that brings together several small and useful utilities for developers, students, makers, or anyone who wants to save time with common tasks (hashing, encoding, formatting, networking, etc.).
+Zotokaf DevKit is a command-line tool (CLI) that groups together several small and practical utilities for developers, students, makers, or anyone looking to save time with common operations such as hashing, encoding, formatting, and networking.
 
----
+This tool has been developed and tested on Linux environments, including Manjaro, Arch Linux, Kali Linux, Ubuntu, and is also fully compatible with Windows systems.
 
-## 🚀 What is it for?
+## What is it for?
 
 This program allows you to:
 
 * Generate unique identifiers (UUID)
-* Hash or verify passwords (hashing)
+* Hash or verify passwords
 * Encode/decode text in base64
-* Read the content of a JWT token (useful for APIs)
+* Decode the content of a JWT token (useful for API development)
 * Beautify JSON or YAML
-* Check if a website is reachable (ping)
-* Get the IP address of a website (DNS resolution)
+* Check if a website is responsive (ping)
+* Resolve the IP address of a domain (DNS query)
 
-All this, without installing anything besides Python and the listed dependencies!
+All of this works without installing anything beyond Python and the listed dependencies.
 
----
-
-## ⚙️ Installation (one-time setup)
+## Installation (one-time setup)
 
 1. Open a terminal in the project directory.
 2. Run the following commands:
@@ -31,92 +29,82 @@ source venv/bin/activate
 pip install -r requirements.txt
 ```
 
----
+## How to use it
 
-## 🧪 How to use it?
-
-Each tool is a "command". You run the program with the specific command you want. Here are the most useful ones:
+Each utility is a "command". You launch the program with the specific command you need. Here are the most useful ones:
 
 * **Generate a unique identifier (UUID)**
 
-  ```bash
-  python toolbox.py uuid
-  ```
+```bash
+python toolbox.py uuid
+```
 
-  → Displays a UUID (useful for generating unique IDs).
+* **Hash a string**
 
-* **Hash a text** (e.g., to verify a password)
+```bash
+python toolbox.py hash --algo sha256 --text "HelloZotokaf"
+```
 
-  ```bash
-  python toolbox.py hash --algo sha256 --text "HelloZotokaf"
-  ```
+* **Encode a string in base64**
 
-  → Displays the SHA256 hash of the string "HelloZotokaf".
+```bash
+python toolbox.py encode base64 --text "Zotokaf123"
+```
 
-* **Encode text in base64**
+* **Decode a base64 string**
 
-  ```bash
-  python toolbox.py encode base64 --text "Zotokaf123"
-  ```
-
-* **Decode base64 text**
-
-  ```bash
-  python toolbox.py decode base64 --text c2VjcmV0MTIz
-  ```
+```bash
+python toolbox.py decode base64 --text c2VjcmV0MTIz
+```
 
 * **Decode a JWT token**
 
-  ```bash
-  python toolbox.py decode jwt --token "eyJhbGciOi..."
-  ```
+```bash
+python toolbox.py decode jwt --token "eyJhbGciOi..."
+```
 
-* **Beautify JSON**
+* **Beautify a JSON string**
 
-  ```bash
-  python toolbox.py beautify json --input '{"name":"GPT","age":2}'
-  ```
+```bash
+python toolbox.py beautify json --input '{"name":"GPT","age":2}'
+```
 
-* **Beautify YAML**
+* **Beautify a YAML string**
 
-  ```bash
-  python toolbox.py beautify yaml --input 'name: GPT\nage: 2'
-  ```
+```bash
+python toolbox.py beautify yaml --input 'name: GPT\nage: 2'
+```
 
 * **Ping a website**
 
-  ```bash
-  python toolbox.py ping --host google.com
-  ```
+```bash
+python toolbox.py ping --host google.com
+```
 
-* **Resolve a domain (DNS)**
+* **DNS resolution**
 
-  ```bash
-  python toolbox.py dns --host github.com --record A
-  ```
+```bash
+python toolbox.py dns --host github.com --record A
+```
 
----
+## Beginner Tip
 
-## 💡 Beginner tip
-
-If you just run:
+If you just run the program without arguments:
 
 ```bash
 python toolbox.py
 ```
 
-You'll see a menu listing the available tools and usage examples.
+A menu will appear showing available tools and usage examples.
 
----
+## Dependencies
 
-## 📦 Dependencies
+* `colorama` (for colored terminal output)
+* `PyYAML` (for YAML parsing)
+* `pyjwt` (for decoding JWT tokens)
+* `dnspython` (for DNS queries)
 
-* `colorama` (for colored output)
-* `PyYAML` (for YAML support)
-* `pyjwt` (for JWT token decoding)
-* `dnspython` (for DNS resolution)
-
-Install them with:
+Install with:
 
 ```bash
 pip install -r requirements.txt
@@ -124,104 +112,120 @@ pip install -r requirements.txt
 
 ---
 
-**Author:** luzocpp (renamed as part of the Zotokaf project)
+**Author:** luzocpp (renamed in this project as Zotokaf)
 
+# FRENCH
 
+Zotokaf DevKit est un outil en ligne de commande (CLI) qui regroupe plusieurs petits utilitaires pratiques pour les développeurs, étudiants, makers ou toute personne souhaitant gagner du temps avec des opérations courantes telles que le hachage, l'encodage, le formatage et le réseau.
 
-
-# luzo devkit
-
-Un outil en ligne de commande (CLI) qui regroupe plusieurs petits outils pratiques pour les développeurs, étudiants, makers, ou toute personne qui veut gagner du temps avec des manipulations courantes (hash, encodage, formatage, réseau, etc.).
+Cet outil a été développé et testé sur des systèmes Linux, dont Manjaro, Arch Linux, Kali Linux, Ubuntu, et est également totalement compatible avec Windows.
 
 ## À quoi ça sert ?
-Ce programme te permet de :
-- Générer des identifiants uniques (UUID)
-- Chiffrer ou vérifier des mots de passe (hash)
-- Encoder/décoder des textes en base64
-- Lire le contenu d'un token JWT (utile pour les API)
-- Rendre du JSON ou du YAML plus lisible
-- Vérifier si un site répond (ping)
-- Trouver l'adresse IP d'un site (DNS)
 
-Tout ça, sans rien installer d'autre que Python et les dépendances listées !
+Ce programme permet de :
 
-## Installation (une seule fois)
+* Générer des identifiants uniques (UUID)
+* Chiffrer ou vérifier des mots de passe
+* Encoder/décoder des textes en base64
+* Lire le contenu d'un token JWT (utile pour les APIs)
+* Rendre le JSON ou YAML plus lisible (beautify)
+* Vérifier la disponibilité d’un site (ping)
+* Trouver l'adresse IP d’un domaine (résolution DNS)
+
+Tout cela fonctionne sans avoir à installer autre chose que Python et les dépendances listées.
+
+## Installation (à faire une seule fois)
+
 1. Ouvre un terminal dans le dossier du projet.
-2. Tape :
-```
+2. Exécute les commandes suivantes :
+
+```bash
 python3 -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
 
-## Comment l'utiliser ?
-Chaque outil est une "commande". Tu lances le programme avec la commande de ton choix. Voici les plus utiles :
+## Comment l'utiliser
 
-- **Générer un identifiant unique**
-  ```
-  python toolbox.py uuid
-  ```
-  → Affiche un UUID (pratique pour créer des identifiants).
+Chaque outil est une "commande". Tu lances le programme avec la commande souhaitée. Voici les plus utiles :
 
-- **Calculer le hash d'un texte** (pour vérifier un mot de passe, etc.)
-  ```
-  python toolbox.py hash --algo sha256 --text "BonjourLuzo"
-  ```
-  → Affiche le hash SHA256 du mot "BonjourLuzo".
+* **Générer un identifiant unique (UUID)**
 
-- **Encoder un texte en base64** (pour cacher un mot de passe, transmettre des données, etc.)
-  ```
-  python toolbox.py encode base64 --text "Luzocppboy123"
-  ```
-
-- **Décoder du base64**
-  ```
-  python toolbox.py decode base64 --text c2VjcmV0MTIz
-  ```
-
-- **Lire le contenu d'un token JWT** (utile pour les développeurs d'API)
-  ```
-  python toolbox.py decode jwt --token "eyJhbGciOi..."
-  ```
-
-- **Rendre du JSON plus lisible**
-  ```
-  python toolbox.py beautify json --input '{"name":"GPT","age":2}'
-  ```
-
-- **Rendre du YAML plus lisible**
-  ```
-  python toolbox.py beautify yaml --input 'nom: GPT\nage: 2'
-  ```
-
-- **Vérifier si un site répond (ping)**
-  ```
-  python toolbox.py ping --host google.com
-  ```
-
-- **Trouver l'adresse IP d'un site (DNS)**
-  ```
-  python toolbox.py dns --host github.com --record A
-  ```
-
-## Astuce débutant
-Si tu lances juste :
+```bash
+python toolbox.py uuid
 ```
+
+* **Calculer le hash d'un texte**
+
+```bash
+python toolbox.py hash --algo sha256 --text "HelloZotokaf"
+```
+
+* **Encoder une chaîne en base64**
+
+```bash
+python toolbox.py encode base64 --text "Zotokaf123"
+```
+
+* **Décoder une chaîne base64**
+
+```bash
+python toolbox.py decode base64 --text c2VjcmV0MTIz
+```
+
+* **Décoder un token JWT**
+
+```bash
+python toolbox.py decode jwt --token "eyJhbGciOi..."
+```
+
+* **Rendre un JSON plus lisible**
+
+```bash
+python toolbox.py beautify json --input '{"name":"GPT","age":2}'
+```
+
+* **Rendre un YAML plus lisible**
+
+```bash
+python toolbox.py beautify yaml --input 'name: GPT\nage: 2'
+```
+
+* **Tester la disponibilité d’un site (ping)**
+
+```bash
+python toolbox.py ping --host google.com
+```
+
+* **Résolution DNS**
+
+```bash
+python toolbox.py dns --host github.com --record A
+```
+
+## Astuce Débutant
+
+Si tu exécutes le programme sans argument :
+
+```bash
 python toolbox.py
 ```
-tu verras un menu avec la liste des outils et des exemples.
+
+Un menu s’affichera avec la liste des outils disponibles et des exemples d’utilisation.
 
 ## Dépendances
-- colorama (pour la couleur)
-- PyYAML (pour le YAML)
-- pyjwt (pour les tokens JWT)
-- dnspython (pour le DNS)
 
-Installe-les avec :
-```
+* `colorama` (pour la couleur dans le terminal)
+* `PyYAML` (pour le YAML)
+* `pyjwt` (pour lire les tokens JWT)
+* `dnspython` (pour les requêtes DNS)
+
+Installation :
+
+```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-**Auteur :** luzocpp
+**Auteur :** luzocpp (renommé dans ce projet en Zotokaf)
