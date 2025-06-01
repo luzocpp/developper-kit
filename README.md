@@ -1,6 +1,6 @@
 # ENGLISH
 
-Zotokaf DevKit is a command-line tool (CLI) that groups together several small and practical utilities for developers, students, makers, or anyone looking to save time with common operations such as hashing, encoding, formatting, and networking.
+luzo DevKit is a command-line tool (CLI) that groups together several small and practical utilities for developers, students, makers, or anyone looking to save time with common operations such as hashing, encoding, formatting, and networking.
 
 This tool has been developed and tested on Linux environments, including Manjaro, Arch Linux, Kali Linux, Ubuntu, and is also fully compatible with Windows systems.
 
@@ -42,13 +42,13 @@ python toolbox.py uuid
 * **Hash a string**
 
 ```bash
-python toolbox.py hash --algo sha256 --text "HelloZotokaf"
+python toolbox.py hash --algo sha256 --text "HelloLuzo"
 ```
 
 * **Encode a string in base64**
 
 ```bash
-python toolbox.py encode base64 --text "Zotokaf123"
+python toolbox.py encode base64 --text "Luzo123"
 ```
 
 * **Decode a base64 string**
@@ -112,11 +112,11 @@ pip install -r requirements.txt
 
 ---
 
-**Author:** luzocpp (renamed in this project as Zotokaf)
+**Author:** luzocpp 
 
 # FRENCH
 
-Zotokaf DevKit est un outil en ligne de commande (CLI) qui regroupe plusieurs petits utilitaires pratiques pour les développeurs, étudiants, makers ou toute personne souhaitant gagner du temps avec des opérations courantes telles que le hachage, l'encodage, le formatage et le réseau.
+Luzo DevKit est un outil en ligne de commande (CLI) qui regroupe plusieurs petits utilitaires pratiques pour les développeurs, étudiants, makers ou toute personne souhaitant gagner du temps avec des opérations courantes telles que le hachage, l'encodage, le formatage et le réseau.
 
 Cet outil a été développé et testé sur des systèmes Linux, dont Manjaro, Arch Linux, Kali Linux, Ubuntu, et est également totalement compatible avec Windows.
 
@@ -158,13 +158,13 @@ python toolbox.py uuid
 * **Calculer le hash d'un texte**
 
 ```bash
-python toolbox.py hash --algo sha256 --text "HelloZotokaf"
+python toolbox.py hash --algo sha256 --text "HelloLuzo"
 ```
 
 * **Encoder une chaîne en base64**
 
 ```bash
-python toolbox.py encode base64 --text "Zotokaf123"
+python toolbox.py encode base64 --text "Luzo123"
 ```
 
 * **Décoder une chaîne base64**
@@ -228,4 +228,4 @@ pip install -r requirements.txt
 
 ---
 
-**Auteur :** luzocpp (renommé dans ce projet en Zotokaf)
+**Auteur :** luzocpp 
